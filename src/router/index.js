@@ -12,6 +12,8 @@ import TMDBView from "@/views/TMDBView.vue";
 import TMDBTopRated from "@/components/tmdb/TMDBTopRated.vue";
 import TMDBPopular from "@/components/tmdb/TMDBPopular.vue";
 
+import KakaoMapView from "@/views/KakaoMapView.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -62,6 +64,11 @@ const routes = [
         component: TMDBPopular,
       },
     ],
+  },
+  {
+    path: "/map",
+    name: "map",
+    component: KakaoMapView,
   },
 ];
 

@@ -10,6 +10,7 @@
           <b-nav-item to="/board">게시판목록</b-nav-item>
           <b-nav-item :to="{ name: 'boardCreate' }">게시글등록</b-nav-item>
           <b-nav-item to="/tmdb">TMDB</b-nav-item>
+          <b-nav-item to="/map">카카오Map</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
