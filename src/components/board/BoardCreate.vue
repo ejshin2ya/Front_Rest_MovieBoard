@@ -1,16 +1,18 @@
 <template>
-  <div>
+  <div class="container">
     <h2>게시글 등록</h2>
-    <fieldset>
-      <legend>등록이지롱</legend>
-      <label for="title">제목</label>
-      <input type="text" id="title" v-model="title" /><br />
-      <label for="writer">글쓴이</label>
-      <input type="text" id="title" v-model="writer" /><br />
-      <label for="content">글내용</label>
-      <textarea v-model="content" cols="30" rows="10"></textarea>
-      <button @click="createBoard">등록</button>
-    </fieldset>
+    <div class="m-4">
+      <b-form-group label="제목" label-for="input-1">
+        <b-form-input id="input-1" v-model="title" trim></b-form-input>
+      </b-form-group>
+      <b-form-group label="글쓴이" label-for="input-2">
+        <b-form-input id="input-2" v-model="writer" trim></b-form-input>
+      </b-form-group>
+      <b-form-group label="글내용" label-for="textarea">
+        <b-form-textarea id="textarea" v-model="content" trim></b-form-textarea>
+      </b-form-group>
+      <b-button variant="outline-success" @click="createBoard">등록</b-button>
+    </div>
   </div>
 </template>
 
